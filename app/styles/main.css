@@ -1,3 +1,6 @@
+@import url(../../bower_components/pure/pure-min.css);
+@import url(../../bower_components/pure/grids-responsive-min.css);
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -117,7 +120,9 @@ a.pure-button-primary {
  * This is the blue top section that appears on the page.
  */
 .splash-container {
-  background: #1f8dd6;
+  background: #1f8dd6 url("../images/bobbyleModified.jpg") center center;
+  background-size: cover;
+  background-attachment: fixed;
   z-index: 1;
   overflow: hidden;
   /* The following styles are required for the "scroll-over" effect */

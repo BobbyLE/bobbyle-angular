@@ -1,4 +1,8 @@
 // bower:scss
+@import '../../bower_components/pure/pure-min.css';
+@import '../../bower_components/pure/grids-responsive-min.css';
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
 // endbower
 
 .browsehappy {
@@ -142,7 +146,9 @@ a.pure-button-primary {
  */
 
 .splash-container {
-  background: #1f8dd6;
+  background: #1f8dd6 url('../images/bobbyleModified.jpg') center center;
+  background-size: cover;
+  background-attachment: fixed;
   z-index: 1;
   overflow: hidden;
   /* The following styles are required for the "scroll-over" effect */

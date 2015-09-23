@@ -15,12 +15,12 @@ angular
     'ngRoute',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'home'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
@@ -30,4 +30,6 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+      // use the HTML5 History API
+      $locationProvider.html5Mode(true);
   });
