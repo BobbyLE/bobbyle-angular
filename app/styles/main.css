@@ -1,6 +1,3 @@
-@import url(../../bower_components/pure/pure-min.css);
-@import url(../../bower_components/pure/grids-responsive-min.css);
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -101,7 +98,8 @@ a.pure-button-primary {
 .home-menu .pure-menu-heading {
   color: white;
   font-weight: 400;
-  font-size: 120%; }
+  font-size: 120%;
+  float: left; }
 
 .home-menu .pure-menu-selected a {
   color: white; }
@@ -130,7 +128,7 @@ a.pure-button-primary {
   height: 88%;
   top: 0;
   left: 0;
-  position: fixed !important; }
+  position: absolute !important; }
 
 .splash {
   /* absolute center .splash within .splash-container */
@@ -138,7 +136,7 @@ a.pure-button-primary {
   height: 50%;
   margin: auto;
   position: absolute;
-  top: 100px;
+  top: 65%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -151,7 +149,7 @@ a.pure-button-primary {
   font-weight: bold;
   color: white;
   border: 3px solid white;
-  padding: 1em 1.6em;
+  padding: 0.5em 0em;
   font-weight: 100;
   border-radius: 5px;
   line-height: 1em; }
@@ -231,7 +229,7 @@ a.pure-button-primary {
   /* We decrease the width of the .splash, since we have more width
   to work with */
   .splash {
-    width: 50%;
+    width: 40%;
     height: 50%; }
 
   .splash-head {

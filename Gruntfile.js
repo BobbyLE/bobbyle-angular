@@ -55,6 +55,10 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
+      less: {
+        files: [ 'bower.json' ],
+        tasks: [ 'exec:bower_install' ]
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -64,6 +68,12 @@ module.exports = function (grunt) {
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
+      }
+    },
+    // exec bower install when bower.json changes
+    exec: {
+      bower_install: {
+        cmd: "bower install"
       }
     },
 
@@ -203,7 +213,7 @@ module.exports = function (grunt) {
       },
       sass: {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,2}bower_components\//
+        ignorePath: /\.\.\.\.\//
       }
     },
 
