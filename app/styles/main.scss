@@ -68,18 +68,19 @@ label {
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
  */
-.pure-form label {
-  margin: 1em 0 0;
-  font-weight: bold;
-  font-size: 100%;
-}
-
-.pure-form input[type] {
-  border: 2px solid #ddd;
-  box-shadow: none;
-  font-size: 100%;
-  width: 100%;
-  margin-bottom: 1em;
+.pure-form {
+  label {
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  input[type] {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
 
 /*
@@ -110,38 +111,49 @@ a.pure-button-primary {
   padding: 0.5em;
   text-align: center;
   box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
-.menu {
   background: $menu-color;
-}
-.pure-menu.pure-menu-fixed {
-  /* Fixed menus normally have a border at the bottom. */
-  border-bottom: none;
-  /* I need a higher z-index here because of the scroll-over effect. */
-  z-index: 4;
-}
+  .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    float: left;
+  }
+  .pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+  }
+  .pure-menu-list li {
+    a:hover, a:focus {
+      background: none;
+      border: none;
+    }
+    &:nth-child(1) a:hover {
+      color: $about-color;
+    }
+    &:nth-child(2) a:hover {
+       color: $work-color;
+    }
+    &:nth-child(3) a:hover {
+       color: $blog-color;
+    }
+    &:nth-child(4) a:hover {
+       color: $contact-color;
+    }
 
-.menu .pure-menu-heading {
-  color: white;
-  font-weight: 400;
-  font-size: 120%;
-  float: left;
-}
+  }
 
-.menu .pure-menu-selected a {
-  color: white;
-}
-.menu .pure-menu-selected .pure-menu-link {
-  color: $about-color;
-}
-.menu a {
-  color: #ffffff;
-}
-.menu li a:hover,
-.menu li a:focus {
-  background: none;
-  border: none;
-  color: #AECFE5;
+  a{
+    color: white;
+  }
+  .pure-menu-selected a {
+    &.pure-menu-link {
+      color: $about-color;
+    }
+
+  }
+
 }
 
 

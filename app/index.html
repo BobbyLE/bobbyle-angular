@@ -24,20 +24,10 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-        <div class="menu pure-menu pure-menu-horizontal pure-menu-fixed">
-            <a class="pure-menu-heading" href="/">Bobby LE</a>
+    <!-- header -->
+    <ng-include src="'./views/layouts/_header.html'"></ng-include>
 
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item pure-menu-selected"><a href="/about" class="pure-menu-link">ABOUT</a></li>
-                <li class="pure-menu-item"><a href="/portfolio" class="pure-menu-link">WORK</a></li>
-                <li class="pure-menu-item"><a href="/blog" class="pure-menu-link">BLOG</a></li>
-                <li class="pure-menu-item"><a href="/contact" class="pure-menu-link">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-
+    <!-- view -->
     <div ng-view></div>
 
 
@@ -48,7 +38,7 @@
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
+       ga('create', 'UA-39482691-1');
        ga('send', 'pageview');
     </script>
 

@@ -53,7 +53,6 @@ label {
   margin: 1em 0 0;
   font-weight: bold;
   font-size: 100%; }
-
 .pure-form input[type] {
   border: 2px solid #ddd;
   box-shadow: none;
@@ -84,37 +83,33 @@ a.pure-button-primary {
 .menu {
   padding: 0.5em;
   text-align: center;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
-
-.menu {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background: #3E3E3E; }
-
-.pure-menu.pure-menu-fixed {
-  /* Fixed menus normally have a border at the bottom. */
-  border-bottom: none;
-  /* I need a higher z-index here because of the scroll-over effect. */
-  z-index: 4; }
-
-.menu .pure-menu-heading {
-  color: white;
-  font-weight: 400;
-  font-size: 120%;
-  float: left; }
-
-.menu .pure-menu-selected a {
-  color: white; }
-
-.menu .pure-menu-selected .pure-menu-link {
-  color: #ed6727; }
-
-.menu a {
-  color: #ffffff; }
-
-.menu li a:hover,
-.menu li a:focus {
-  background: none;
-  border: none;
-  color: #AECFE5; }
+  .menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    float: left; }
+  .menu .pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4; }
+  .menu .pure-menu-list li a:hover, .menu .pure-menu-list li a:focus {
+    background: none;
+    border: none; }
+  .menu .pure-menu-list li:nth-child(1) a:hover {
+    color: #ed6727; }
+  .menu .pure-menu-list li:nth-child(2) a:hover {
+    color: #efb525; }
+  .menu .pure-menu-list li:nth-child(3) a:hover {
+    color: #39af8d; }
+  .menu .pure-menu-list li:nth-child(4) a:hover {
+    color: #15acb7; }
+  .menu a {
+    color: white; }
+  .menu .pure-menu-selected a.pure-menu-link {
+    color: #ed6727; }
 
 /*
  * -- SPLASH STYLES --
