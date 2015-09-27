@@ -25,7 +25,7 @@ h4,
 h5,
 h6,
 label {
-  color: #34495e; }
+  color: #f18135; }
 
 .pure-img-responsive {
   max-width: 100%;
@@ -66,7 +66,7 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-  background-color: #1f8dd6;
+  background-color: #ed6727;
   color: white;
   padding: 0.5em 2em;
   border-radius: 5px; }
@@ -81,13 +81,13 @@ a.pure-button-primary {
  * -- MENU STYLES --
  * I want to customize how my .pure-menu looks at the top of the page
  */
-.home-menu {
+.menu {
   padding: 0.5em;
   text-align: center;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
-.home-menu {
-  background: #2d3e50; }
+.menu {
+  background: #3E3E3E; }
 
 .pure-menu.pure-menu-fixed {
   /* Fixed menus normally have a border at the bottom. */
@@ -95,20 +95,23 @@ a.pure-button-primary {
   /* I need a higher z-index here because of the scroll-over effect. */
   z-index: 4; }
 
-.home-menu .pure-menu-heading {
+.menu .pure-menu-heading {
   color: white;
   font-weight: 400;
   font-size: 120%;
   float: left; }
 
-.home-menu .pure-menu-selected a {
+.menu .pure-menu-selected a {
   color: white; }
 
-.home-menu a {
-  color: #6FBEF3; }
+.menu .pure-menu-selected .pure-menu-link {
+  color: #ed6727; }
 
-.home-menu li a:hover,
-.home-menu li a:focus {
+.menu a {
+  color: #ffffff; }
+
+.menu li a:hover,
+.menu li a:focus {
   background: none;
   border: none;
   color: #AECFE5; }
@@ -118,7 +121,7 @@ a.pure-button-primary {
  * This is the blue top section that appears on the page.
  */
 .splash-container {
-  background: #1f8dd6 url("../images/bobbyleModified.jpg") center center;
+  background: url("../images/bobbyleModified.jpg") center center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
@@ -186,19 +189,20 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-  color: #1f8dd6; }
+  color: #ed6727; }
 
 .content-subhead i {
   margin-right: 7px; }
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-  background: #2d3e50;
+  background: #ed6727;
   color: #aaa; }
 
 /* This is the class used for the footer */
 .footer {
-  background: #111; }
+  background: #3E3E3E;
+  color: #fff; }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -216,10 +220,10 @@ a.pure-button-primary {
 
   /* We can align the menu header to the left, but float the
   menu items to the right. */
-  .home-menu {
+  .menu {
     text-align: left; }
 
-  .home-menu ul {
+  .menu ul {
     float: right; }
 
   /* We increase the height of the splash-container */

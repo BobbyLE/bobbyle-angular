@@ -1,6 +1,12 @@
 // bower:scss
 // endbower
 
+$menu-color: #3E3E3E; //gris foncé
+$about-color: #ed6727; //Orange
+$work-color: #efb525; //Jaune
+$blog-color: #39af8d; //vert
+$contact-color: #15acb7; //bleu
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -31,7 +37,7 @@ h4,
 h5,
 h6,
 label {
-  color: #34495e;
+  color: #f18135;
 }
 
 .pure-img-responsive {
@@ -81,7 +87,7 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-  background-color: #1f8dd6;
+  background-color: $about-color;
   color: white;
   padding: 0.5em 2em;
   border-radius: 5px;
@@ -100,13 +106,13 @@ a.pure-button-primary {
  * I want to customize how my .pure-menu looks at the top of the page
  */
 
-.home-menu {
+.menu {
   padding: 0.5em;
   text-align: center;
   box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
-.home-menu {
-  background: #2d3e50;
+.menu {
+  background: $menu-color;
 }
 .pure-menu.pure-menu-fixed {
   /* Fixed menus normally have a border at the bottom. */
@@ -115,22 +121,24 @@ a.pure-button-primary {
   z-index: 4;
 }
 
-.home-menu .pure-menu-heading {
+.menu .pure-menu-heading {
   color: white;
   font-weight: 400;
   font-size: 120%;
   float: left;
 }
 
-.home-menu .pure-menu-selected a {
+.menu .pure-menu-selected a {
   color: white;
 }
-
-.home-menu a {
-  color: #6FBEF3;
+.menu .pure-menu-selected .pure-menu-link {
+  color: $about-color;
 }
-.home-menu li a:hover,
-.home-menu li a:focus {
+.menu a {
+  color: #ffffff;
+}
+.menu li a:hover,
+.menu li a:focus {
   background: none;
   border: none;
   color: #AECFE5;
@@ -143,7 +151,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-  background: #1f8dd6 url('../images/bobbyleModified.jpg') center center;
+  background: url('../images/bobbyleModified.jpg') center center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
@@ -216,7 +224,7 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-  color: #1f8dd6;
+  color: $about-color;
 }
 .content-subhead i {
   margin-right: 7px;
@@ -224,13 +232,14 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-  background: #2d3e50;
+  background: $about-color;
   color: #aaa;
 }
 
 /* This is the class used for the footer */
 .footer {
-  background: #111;
+  background: $menu-color;
+  color: #fff;
 }
 
 /*
@@ -251,10 +260,10 @@ a.pure-button-primary {
 
   /* We can align the menu header to the left, but float the
   menu items to the right. */
-  .home-menu {
+  .menu {
     text-align: left;
   }
-  .home-menu ul {
+  .menu ul {
     float: right;
   }
 
