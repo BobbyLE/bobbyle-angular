@@ -15,7 +15,8 @@ angular
     'ngRoute',
     'ngTouch'
   ])
-  .config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
           redirectTo: '/about'
@@ -28,11 +29,5 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-      //check browser support
-      if(window.history && window.history.pushState){
-        // if you don't wish to set base URL then use this
-        $locationProvider.html5Mode({
-          enabled: true
-        });
-      }
-  }]);
+
+  });
