@@ -60,6 +60,15 @@ label {
   width: 100%;
   margin-bottom: 1em; }
 
+/* -- LOGO -- */
+.logo img {
+  float: left;
+  margin-right: 0.4em; }
+.logo span {
+  display: block;
+  line-height: 1;
+  margin-top: 0.8em; }
+
 /*
  * -- PURE BUTTON STYLES --
  * I want my pure-button elements to look a little different
