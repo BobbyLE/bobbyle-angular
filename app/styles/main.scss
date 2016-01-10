@@ -1,11 +1,12 @@
 // bower:scss
 // endbower
+@import "pure_offset";
 
 $menu-color: #3E3E3E; //gris foncé
 $about-color: #ed6727; //Orange
 $work-color: #efb525; //Jaune
-$blog-color: #39af8d; //vert
-$contact-color: #15acb7; //bleu
+$photography-color: #39af8d; //vert
+$blog-color: #15acb7; //bleu
 
 .browsehappy {
   margin: 0.2em 0;
@@ -45,6 +46,37 @@ label {
   height: auto;
 }
 
+a {
+  color : #000;
+  transition: 0.5s all;
+  &:hover {
+    text-decoration:none;
+  }
+  #about & {
+    color: $about-color;
+    &:hover {
+      color: #000;
+    }
+  }
+  #work & {
+    color: $work-color;
+    &:hover {
+      color: #000;
+    }
+  }
+  #photography & {
+    color: $photography-color;
+    &:hover {
+      color: #000;
+    }
+  }
+  #blog & {
+    color: $blog-color;
+    &:hover {
+      color: #000;
+    }
+  }
+}
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -149,10 +181,10 @@ a.pure-button-primary {
        color: $work-color;
     }
     &:nth-child(3) a:hover {
-       color: $blog-color;
+       color: $photography-color;
     }
     &:nth-child(4) a:hover {
-       color: $contact-color;
+       color: $blog-color;
     }
 
   }
