@@ -1,0 +1,7 @@
+<ul ng-controller="NavCtrl" class="pure-menu-list">
+  <li class="pure-menu-item" ng-class="{'pure-menu-selected': isActive('/about')}"><a href="/about" class="pure-menu-link">ABOUT</a></li>
+  <li class="pure-menu-item" ng-class="{'pure-menu-selected': isActive('/work')}"><a href="/work" class="pure-menu-link">WORK</a></li>
+  <li class="pure-menu-item" ng-class="{'pure-menu-selected': isActive('/photography')}"><a href="/photography" class="pure-menu-link">PHOTOGRAPHY</a></li>
+  <li class="pure-menu-item" ng-class="{'pure-menu-selected': isActive('/blog')}"><a href="/blog" class="pure-menu-link">BLOG</a></li>
+  {{ location.path() }}
+</ul>

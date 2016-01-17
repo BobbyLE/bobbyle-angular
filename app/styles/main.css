@@ -580,18 +580,16 @@ a.pure-button-primary {
   .menu .pure-menu-list li a:hover, .menu .pure-menu-list li a:focus {
     background: none;
     border: none; }
-  .menu .pure-menu-list li:nth-child(1) a:hover {
+  .menu .pure-menu-list li:nth-child(1) a:hover, .menu .pure-menu-list li.pure-menu-selected:nth-child(1) a {
     color: #ed6727; }
-  .menu .pure-menu-list li:nth-child(2) a:hover {
+  .menu .pure-menu-list li:nth-child(2) a:hover, .menu .pure-menu-list li.pure-menu-selected:nth-child(2) a {
     color: #efb525; }
-  .menu .pure-menu-list li:nth-child(3) a:hover {
+  .menu .pure-menu-list li:nth-child(3) a:hover, .menu .pure-menu-list li.pure-menu-selected:nth-child(3) a {
     color: #39af8d; }
-  .menu .pure-menu-list li:nth-child(4) a:hover {
+  .menu .pure-menu-list li:nth-child(4) a:hover, .menu .pure-menu-list li.pure-menu-selected:nth-child(4) a {
     color: #15acb7; }
   .menu a {
     color: white; }
-  .menu .pure-menu-selected a.pure-menu-link {
-    color: #ed6727; }
 
 /*
  * -- SPLASH STYLES --

@@ -26,8 +26,12 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/work', {
+        templateUrl: 'views/work.html',
+        //controller: 'WorkCtrl',
+        //controllerAs: 'work'
+      })
       .otherwise({
         redirectTo: '/'
       });
-
   });

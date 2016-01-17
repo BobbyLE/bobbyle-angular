@@ -174,16 +174,16 @@ a.pure-button-primary {
       background: none;
       border: none;
     }
-    &:nth-child(1) a:hover {
+    &:nth-child(1) a:hover, &.pure-menu-selected:nth-child(1) a {
       color: $about-color;
     }
-    &:nth-child(2) a:hover {
+    &:nth-child(2) a:hover, &.pure-menu-selected:nth-child(2) a {
        color: $work-color;
     }
-    &:nth-child(3) a:hover {
+    &:nth-child(3) a:hover, &.pure-menu-selected:nth-child(3) a {
        color: $photography-color;
     }
-    &:nth-child(4) a:hover {
+    &:nth-child(4) a:hover , &.pure-menu-selected:nth-child(4) a{
        color: $blog-color;
     }
 
@@ -191,12 +191,6 @@ a.pure-button-primary {
 
   a{
     color: white;
-  }
-  .pure-menu-selected a {
-    &.pure-menu-link {
-      color: $about-color;
-    }
-
   }
 
 }
