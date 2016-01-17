@@ -23,12 +23,12 @@ angular
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
+        controller: 'AboutController',
         controllerAs: 'about'
       })
       .when('/work', {
         templateUrl: 'views/work.html',
-        //controller: 'WorkCtrl',
+        //controller: 'WorkControlller',
         //controllerAs: 'work'
       })
       .otherwise({

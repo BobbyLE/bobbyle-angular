@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name bobbyleApp.controller:NavCtrl
+ * @name bobbyleApp.controller:NavController
  * @description
- * # NavCtrl
+ * # NavController
  * Controller of the bobbyleApp
  */
 angular.module('bobbyleApp')
-  .controller('NavCtrl', function($scope, $location) {
+  .controller('NavController', function($scope, $location) {
     $scope.isActive = function(route) {
       return route === $location.path();
     };

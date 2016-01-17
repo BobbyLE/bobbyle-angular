@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name bobbyleApp.controller:AboutCtrl
+ * @name bobbyleApp.controller:AboutController
  * @description
- * # AboutCtrl
+ * # AboutController
  * Controller of the bobbyleApp
  */
 angular.module('bobbyleApp')
-  .controller('AboutCtrl', function () {
+  .controller('AboutController', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

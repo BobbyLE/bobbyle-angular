@@ -1,12 +1,11 @@
 'use strict';
 
-describe('Controller: NavCtrl', function () {
+describe('Controller: NavController', function () {
 
   // load the controller's module
   beforeEach(module('bobbyleApp'));
 
-  var NavCtrl,
-    scope,
+  var scope,
     createController,
     location;
 
@@ -16,7 +15,7 @@ describe('Controller: NavCtrl', function () {
     scope = $rootScope.$new();
 
     createController = function() {
-      return $controller('NavCtrl', {
+      return $controller('NavController', {
         '$scope': scope,
         'location': location
       });
