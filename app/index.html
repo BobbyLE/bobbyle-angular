@@ -28,7 +28,7 @@
     <ng-include src="'views/layouts/_header.html'"></ng-include>
 
     <!-- view -->
-    <div ng-view></div>
+    <div class="page {{ pageClass }}" ng-view></div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -54,8 +54,9 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/nav.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/work.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -28,8 +28,8 @@ angular
       })
       .when('/work', {
         templateUrl: 'views/work.html',
-        //controller: 'WorkControlller',
-        //controllerAs: 'work'
+        controller: 'WorkController',
+        controllerAs: 'work'
       })
       .otherwise({
         redirectTo: '/'

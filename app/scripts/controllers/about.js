@@ -8,10 +8,6 @@
  * Controller of the bobbyleApp
  */
 angular.module('bobbyleApp')
-  .controller('AboutController', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutController', function ($scope) {
+    $scope.pageClass = 'page-about';
   });

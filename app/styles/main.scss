@@ -77,6 +77,34 @@ a {
     }
   }
 }
+
+.page {
+  bottom:0;
+  //padding-top:200px;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+
+/*
+ * -- ANIMATION STYLES --
+ *
+
+/* move to left  */
+@keyframes moveToLeft {
+  from { }
+  to {  transform: translateX(-100%); }
+}
+
+/* move from right  */
+@keyframes moveFromRight {
+  from { transform: translateX(100%); }
+}
+
+.ng-enter        { animation: moveFromRight .6s ease both; z-index: 1; }
+.ng-leave        { animation: moveToLeft .7s ease-in-out both; z-index: 2; }
+
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -202,7 +230,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-  background: url('../images/bobbyleModified.jpg') center center;
+  background: url('../images/bg-about.jpg') center center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
@@ -213,6 +241,9 @@ a.pure-button-primary {
   top: 0;
   left: 0;
   position: absolute !important;
+}
+.page-work .splash-container {
+    background-image: url('../images/bg-photography.jpg');
 }
 
 .splash {
